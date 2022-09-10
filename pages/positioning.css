@@ -1,0 +1,27 @@
+.container {
+    border: 10px solid grey;
+    background-color: bisque;
+    margin: auto;
+    width: 800px;
+    position: relative;
+}
+
+.kotak_satu, .kotak_dua, .kotak_tiga, .kotak_empat {
+    width: 200px;
+    height: 200px;
+}
+.kotak_satu {
+    background-color: green;
+}
+.kotak_dua {
+    background-color: blueviolet;
+    position: absolute;
+    top: 50;
+    left: 30;
+}
+.kotak_tiga {
+    background-color: tomato;
+}
+.kotak_empat {
+
+}
