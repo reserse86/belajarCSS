@@ -50,23 +50,221 @@ table {
 }
 
 /* ================css reset end===================== */
-
-
 body {
-    background-image: url("../img/bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+	font-family: 'Comfortaa', cursive;
+}
 
+
+.wrap{
+	background: rgb(247, 247, 248);
+	width: 100%;
+	
+}
+ 
+/*bagian header*/
+.wrap .header{
+	background: rgb(113, 116, 113);
+	height: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.header h1 {
+	color: aquamarine;
+	font-size: 18px;
+}
+.header p {
+	color: black;
+	padding-top: 10px;
+} 
+
+
+/*akhir header*/
+ 
+/*bagian menu*/
+.wrap .menu{
+	font-size: 13px;
+	
+}
+ 
+.wrap .menu ul{
+	padding: 0;
+	margin: 0;
+	background: rgb(8, 8, 8);
+	overflow: hidden;
+
+
+}
+ 
+.wrap .menu ul li{
+	float: left;
+	list-style-type: none;
+	padding: 15px;
+}
+
+.wrap .menu ul li:hover {
+	background-color: rgb(49, 48, 48);
+
+	
+}
+
+.wrap .menu ul li a {
+	text-decoration: none;
+	color: rgb(245, 241, 241);
+	display: inline-block;
+	text-align: center;
+
+}
+
+/* ======== Sub Menu =========== */
+li .dropdown {
+	display: inline-block;
+}
+
+.dropdown:hover .isi-dropdown {
+	display: block;
+	width: 110px;
 }
 
 
 
-.kotak_dua {
-    width: 300px;
-    height: 300px;
-    background-color: rgba(243, 11, 224,0.3);
-    text-align: center;
-    line-height: 300px;
-    
+.isi-dropdown {
+	position:absolute;
+	display: none;
+	width: 120px;
+}
 
+.isi-dropdown a {
+	color: aquamarine;
+}
+
+
+/*akhir menu*/
+ 
+.clear{
+	clear: both;
+}
+ 
+.badan{
+	height: 100%;
+}
+/*bagian sidebar*/
+.wrap .badan .sidebar{
+	border-right: 3px solid rgb(189, 47, 47);
+	float: left;	
+	width: 19%;
+	padding-top: 15px;
+	height: 100%;
+	overflow: auto;	
+}
+
+.sidebar ul li {
+	padding-left: 15px;
+	padding-top: 5px;
+	
+	
+}
+
+.sidebar ul li a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	padding: 5px;
+	width: 90%;
+	text-indent: 10px;
+	text-align: right;
+	font-size: 14px;
+}
+
+.sidebar ul li a:hover {
+	background-color: black;
+	color: rgb(245, 247, 247);
+	
+}
+/*akhir sidebar*/
+ 
+
+/* Content */
+.wrap .badan .content{
+	background: rgb(247, 242, 242);
+	float: left;
+	height: 100%;
+	width: 80%;	
+	padding-bottom: 30px;
+	padding-top: 15px;
+	text-align: justify;
+	line-height: 20px;
+	
+}
+.content .judul h1 {
+	font-size: 17px;
+	padding-left: 20px;
+	padding-top: 10px;
+	text-shadow: 5px 5px 4px black;
+}
+.content .isi {
+	font-size: 14px;
+	padding-left:15px;
+	padding-top: 10px;
+}
+
+
+
+
+
+/* End of content */
+.wrap .footer{
+	width: 100%;
+	padding: 10px;
+	background-color: black;
+	color: aliceblue;
+	text-align: center;
+}
+.footer h6 {
+	font-size: 15px;
+	color: aquamarine;
+}
+.footer p {
+	font-size: 13px;
+	padding-top: 10px;
+}
+span a {
+	text-decoration: none;
+	color: aliceblue;
+}
+
+
+/* FOrmatting didalam paragraf */
+p .bold {
+	font-weight: bold;
+	color: rgb(18, 175, 123);
+}
+
+/* ===== Formatting Tabel ======== */
+table, th, td {
+	border: 2px solid black;
+}
+th {
+	width: 200px;
+	height: 20px;
+	background-color: rgb(128, 126, 126);
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+td {
+	height: 15px;
+	padding-left: 4px;
+}
+.th_Nomor {
+	width: 30px;
+}
+.td_Nomor {
+	text-align: center;
+	}
+
+.isi img {
+	width: 150px;
+	filter:blur(5px)
+	
 }
